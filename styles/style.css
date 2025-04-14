@@ -1,0 +1,83 @@
+:root {
+    --size-base: 10px;
+    --color-background: FFFFFA;
+    --color-text: 080704;
+    --color-text-disabled: 595758;
+}
+
+html {
+    font-size: var(--size-base);
+    color: var(--color-text);
+    background-color: var(--color-background);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+@media (max-width: 650px) {
+    html {
+        font-size: calc(var(--size-base) / 2);
+    }
+}
+
+.main-heading {
+    font-size: 8rem;
+    height: 10rem;
+    margin-top: 4rem;
+}
+
+.table-letters {
+    border-collapse: separate;
+    border-spacing: 2rem;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table-letters-cell {
+    width: 6rem;
+    text-align: center;
+    border: 0.2rem solid;
+    border-radius: 1rem;
+}
+
+.emptyCell {
+    border: 0;
+    color: var(--color-text-disabled);
+}
+
+.letter-primary,
+.letter-secondary {
+    font-size: 4rem;
+}
+
+.letter-secondary {
+    display: none;
+    font-family: 'Franklin Gothic Medium';
+    font-weight: lighter;
+}
+
+.table-letters-cell:hover .letter-primary {
+    display: none;
+}
+
+.table-letters-cell:hover .letter-secondary {
+    display: inline;
+}
+
+/* TODO reuse mechanism of letter-primary and letter-secondary */
+.heading-secondary {
+    display: none;
+}
+
+.main-heading:hover .heading-primary {
+    display: none;
+}
+
+.main-heading:hover .heading-secondary {
+    display: inline;
+}
+
+.table-letters-cell:hover {
+    background-color: FFFFFA;
+}

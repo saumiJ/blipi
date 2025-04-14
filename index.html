@@ -1,5 +1,6 @@
 <DOCTYPE! html>
-<html>
+  <html>
+
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,22 @@
     <meta name="keywords" content="Bhārat Lipi, Transliteration, Indian languages, ISO 15919">
     <meta name="author" content="Saumitra Zośī">
     <title>Bhārat Lipi</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/style.css">
   </head>
+
   <body>
-    <p class="letter-primary">अ</p>
+    <h1 class="main-heading">
+      <span class="heading-primary">भारत लिपि</span>
+      <span class="heading-secondary">Bhārat Lipi</span>
+    </h1>
+    <div id="section-vowels">
+      <table id="table-vowels" class="table-letters"></table>
+    </div>
+    <div id="section-consonants">
+      <table id="table-consonants" class="table-letters"></table>
+    </div>
+    <script src="src/ts/hindi.ts"></script>
   </body>
-</html>
+
+  </html>
